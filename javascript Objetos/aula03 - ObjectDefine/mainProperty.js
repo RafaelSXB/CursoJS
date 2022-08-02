@@ -1,4 +1,4 @@
-// ObjectDefine
+// ObjectProperty
 function Pessoa(nome, sobrenome, idade){
     this.nome = nome,
     this.sobrenome = sobrenome,
