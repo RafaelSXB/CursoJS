@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<%- include('includes/head') %>
+
+<body>
+
+  <section class="container">
+    <h1>
+      
+      <%= titulo %>
+
+    </h1>
+
+    <form action="" method="post">
+      <label for="Usuario">
+        <% if(usuario) { %>
+          <%= usuario %>
+          <% } %>
+      </label>
+      <input type="text" name="Usuario"> 
+      <input type="hidden" name="_csrf" value="<%= token %>" >
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
